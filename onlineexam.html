@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script lang="javascript">
+        function exam(form)
+        {
+            var i=0;
+            if(form.one[2].checked)
+            i=i+5;
+            if(form.two[1].checked)
+            i=i+5;
+            if(form.three[1].checked)
+            i=i+5;
+            if(form.four[3].checked)
+            i=i+5;
+            if(form.five[0].checked)
+            i=i+5;
+            window.alert("thankyu for attending exam,your score is "+i)
+        }
+ 
+
+
+    </script>
+</head>
+<body>
+    <h1>ONLINE EXAMS</h1>
+    <form onsubmit="exam(this)">
+
+    
+    <p>
+        <label>what is the colour of sky?</label>
+        <label>orange</label>
+        <input type="radio" name="one" value="orange"></input>
+        <label>red</label>
+        <input type="radio" name="one" value="red"></input>
+        <label>skyblue</label>
+        <input type="radio" name="one" value="skyblue"></input>
+        <label> green</label>
+        <input type="radio" name="one" value="green"></input>
+    </p>
+
+    <p>
+        <label>what is the color of apple?</label>
+        <label>orange</label>
+        <input type="radio" name="two" value="orange"></input>
+        <label>red</label>
+        <input type="radio" name="two" value="red"></input>
+        <label>skyblue</label>
+        <input type="radio" name="two" value="skyblue"></input>
+        <label> green</label>
+        <input type="radio" name="two" value="green"></input>
+    </p>
+
+<p>
+    <label>how many districts in kerala?</label>
+        <label>10</label>
+        <input type="radio" name="three" value=10></input>
+        <label>14</label>
+        <input type="radio" name="three" value=14></input>
+        <label>25</label>
+        <input type="radio" name="three" value=25></input>
+        <label> 30</label>
+        <input type="radio" name="three" value="30"></input>
+    </p>
+
+    <p>
+        <label>what is the colour of river?</label>
+        <label>orange</label>
+        <input type="radio" name="four" value="orange"></input>
+        <label>red</label>
+        <input type="radio" name="four" value="red"></input>
+        <label>green</label>
+        <input type="radio" name="four" value="green"></input>
+        <label> blue</label>
+        <input type="radio" name="four" value="blue"></input>
+    </p>
+
+    <p>
+        <label>1+3=</label>
+        <label>4</label>
+        <input type="radio" name="five" value=4></input>
+        <label>3/label>
+        <input type="radio" name="five" value=3></input>
+        <label>6</label>
+        <input type="radio" name="five" value=6></input>
+        <label>10</label>
+        <input type="radio" name="five" value=10></input>
+    </p>
+    </p>
+</p>
+    <input type="submit" value="submit"></input>
+    <input type="reset" value="reset"></input>
+    </form>
+    
+</body>
+</html>
