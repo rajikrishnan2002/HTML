@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function REGISTRATION(form)
+         {
+          var firstname=document.getElementById("a")
+          var middlename=document.getElementById("b")
+          var lastname=document.getElementById("c")
+          var course=document.getElementById("d")
+          var genderm=document.getElementById("e")
+          var genderf=document.getElementById("f")
+          var gendero=document.getElementById("g")
+          var phno=document.getElementById("h")
+          var address=document.getElementById("i")
+          var email=document.getElementById("j")
+          var formValid=false;
+
+          if(a.value==""||a.value==null)
+           {
+            window.alert("please enter the first name");
+            return false;
+           }
+
+           if(b.value==""||b.value==null)
+           {
+            window.alert("please enter the middle name");
+            return false;
+           }
+
+           if(c.value==""||c.value==null)
+           {
+            window.alert("please enter the last name");
+            return false;
+           }
+           
+           if(d.value==""||d.value==null)
+           {
+            window.alert("please select the course");
+            return false;
+           }
+
+           
+           if(!e.checked && !f.checked && !g.checked)
+           {
+            window.alert("please select the gender");
+            return false;
+           }
+
+           
+           if(h.value==""||h.value==null)
+           {
+            window.alert("please enter the phone number");
+            return false;
+           }
+
+           
+           if(i.value==""||i.value==null)
+           {
+            window.alert("please enter the address");
+            return false;
+           }
+
+           
+           if(j.value==""||j.value==null)
+           {
+            window.alert("please enter the email id");
+            return false;
+           }
+        }
+    </script>
+</head>
+<body bgcolor="skyblue">
+    <form onsubmit="return REGISTRATION()">
+        <table>
+    <h1>STUDENT REGISTRATION FORM</h1>
+    <tr>
+        <td><label>First Name</label></td>
+        <td><input type="text" name="First name" size=20 id="a" placeholder="enter the first name"/><br><br></td>
+    </tr>
+
+    <tr>
+        <td><label>Middle Name</label></td>
+        <td><input type="text" name="Middle name" size=20 id="b" placeholder="enter the second name"/><br><br></td>
+    </tr>
+
+
+ <tr>
+    <td><label>last Name</label></td>
+     <td><input type="text" name="Last name" size=20 id="c" placeholder="enter the last name"/><br><br></td>
+</tr>
+
+
+ <tr>
+    <td><label>Courses</label></td>
+    <td><select id="d"><br><br>
+        <option value="Course">Course</option>
+        <option value="BCA">BCA</option>
+        <option value="BBA">BBA</option>
+        <option value="MCA">MCA</option>
+        <option value="MBA">MBA</option>
+    </select><br><br></td>
+    </tr>
+
+    <tr>
+        <td><label>Gender</label></td>
+        <td><input type="radio" name="Gender" value="male" id="e"/>male
+          <input type="radio" name="Gender" value="female" id="f"/>female
+         <input type="radio" name="Gender" value="Others" id="g"/>Others<br><br></td>
+    </tr>
+     <tr>
+        <td><label>Phone number</label></td>
+         <td><input type="text" name="country code" size=2 placeholder="country code"/></td> 
+           <td><input type="text" name="phone number" size=10 id="h" placeholder="phone number"/><br><br></td>
+     </tr>
+    <tr>
+       <td><label>Address</label></td> 
+         <td><textarea cols=50 rows=5 name="address" size=20 id="i"></textarea><br><br></td>
+    <tr>
+      <td><label>Hobbies</label></td>
+       <td><input type="checkbox" name="hobbies" size=50/><br><br></td>
+       </tr>
+    <tr>
+       <td><label>Email</label></td>
+        <td><input type="email" name="email" size=20 id="j"/><br><br></td>
+    </tr>
+    <tr>
+     <td><label>password</label></td>
+	 <td><input type="password" Name="password" size=20 placeholder="Enter your password/" ><br><br></td>
+    </tr>
+<tr>
+    <td><input type="submit"/></td>
+    <td><input type="button" name="cancel" value="cancel"/></td>
+    </tr>
+
+
+
+
+
+    </table>
+</form>
+</body>
+</html>
